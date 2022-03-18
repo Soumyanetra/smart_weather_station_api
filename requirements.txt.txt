@@ -1,0 +1,10 @@
+DEPENDENCIES		COMMAND
+
+express:		npm i express
+dotenv:			npm i dotenv
+firbase:		npm i firebase@8.10.0
+
+
+DEV-DEPENDENCIES	COMMAND
+
+nodemon:		npm i -g nodemon --save-dev
