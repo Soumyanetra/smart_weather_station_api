@@ -1,5 +1,5 @@
 {
-  "name": "weatherAPI",
+  "name": "smart_weather_station_api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://Soumyanetra.github.io/weatherAPI",
+  "homepage": "https://Soumyanetra.github.io/smart_weather_station_api",
   "dependencies": {
     "gh-pages": "^3.2.3"
   }
