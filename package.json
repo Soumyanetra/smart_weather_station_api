@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/Soumyanetra/weatherAPI/issues"
   },
-  "homepage": "https://github.com/Soumyanetra/weatherAPI#readme",
   "dependencies": {
     "gh-pages": "^3.2.3"
   }
