@@ -32,13 +32,18 @@ const setWeatherData = async (req, res, next) => {
             if (weatherData.empty)
                 res.status(404).send("No Data Found")
             else {
-                    weatherData.forEach(async doc => {
+                weatherData.forEach(async doc => {
+                    try {
                         if (cred.id === doc.id && doc.data().profile && cred.password === doc.data().profile.password) {
                             await firestore.collection('Members').doc(cred.id).set({ data }, { merge: true })
-                            res.send("Successful")
+                            
                             throw 'Break';
                         }
-                    })
+                    }
+                    catch (e) {
+                        res.send("Successful")
+                    }
+                })
                 
                 setInterval(() => {
                         try {
